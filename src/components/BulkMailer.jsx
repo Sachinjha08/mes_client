@@ -17,7 +17,7 @@ export default function BulkMailer() {
 
     try {
       const resp = await axios.post(
-        "http://localhost:5000/api/send",
+        "https://mes-server.onrender.com/api/send",
         { senderName, senderEmail, subject, message },
         { timeout: 0 }
       );
