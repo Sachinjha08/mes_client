@@ -7,7 +7,7 @@ export default function EmployeeList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/employees")
+      .get("https://mes-server.onrender.com/api/employees")
       .then((res) => {
         setEmployees(res.data.employees || []);
       })
